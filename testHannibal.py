@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from testAutomation import PythonOrgSearch
 
 class TestHannibal(unittest.TestCase):
   
@@ -19,6 +20,7 @@ class TestHannibal(unittest.TestCase):
     self.driver.get("https://www.wikipedia.org/")
     self.driver.find_element(By.ID, "searchInput").click()
     self.driver.find_element(By.ID, "searchInput").send_keys("hannibal")
+    PythonOrgSearch.test_search_in_python_org
 
   def tearDown(self):
         self.driver.close()
