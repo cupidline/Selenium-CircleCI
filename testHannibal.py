@@ -15,12 +15,13 @@ class TestHannibal(unittest.TestCase):
   
   def setUp(self):
     self.driver = webdriver.Chrome()
+    PythonOrgSearch.test_search_in_python_org
     
   def test_hannibal(self):
     self.driver.get("https://www.wikipedia.org/")
     self.driver.find_element(By.ID, "searchInput").click()
     self.driver.find_element(By.ID, "searchInput").send_keys("hannibal")
-    PythonOrgSearch.test_search_in_python_org
+    
 
   def tearDown(self):
         self.driver.close()
