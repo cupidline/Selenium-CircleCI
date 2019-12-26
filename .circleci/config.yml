@@ -9,5 +9,6 @@ jobs:
       - run: sudo pip install selenium
       - run: sudo pip install requests
       - run: 
-          command: python testAutomation.py
+          command: |
+                   python testAutomation.py
                    python testHannibal.py
